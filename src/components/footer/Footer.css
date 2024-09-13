@@ -1,0 +1,101 @@
+/* Footer Styling */
+.footer {
+    background: darkslategray; /* Matching gradient background with header */
+    padding: 40px 20px;
+    color: #ffffff; /* White text color */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease-in-out;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px; /* Adjust gap as needed */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    padding: 10px;
+    text-align: left;
+}
+
+/* h4 Tag Styling Similar to Logo */
+.footer-column h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    background: -webkit-linear-gradient(45deg, #FF512F, #F09819); /* Gradient text color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto', sans-serif; /* Professional font */
+    font-weight: 700;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-column p, .footer-column a {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ffffff; /* White text color */
+}
+
+.footer-column a:hover {
+    color: #333;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #ffffff; /* White icon color */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6a00; /* Hover color matching logo gradient */
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer-address p {
+    display: flex;
+    align-items: center;
+}
+
+.footer-address svg {
+    margin-right: 10px;
+    color: #ff6a00; /* Icon color matching logo gradient */
+}
+
+/* Hover Effect for Columns */
+.footer-column:hover h4 {
+    color: #ff6a00; /* Hover color matching logo gradient */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-address p {
+        justify-content: center;
+    }
+}

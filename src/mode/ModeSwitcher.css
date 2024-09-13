@@ -1,0 +1,89 @@
+.bulb-switch {
+    position: fixed;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .bulb-switch input {
+    opacity: 0;
+    width: 0;
+  }
+  
+  .bulb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s ease, transform 0.4s ease;
+    position: relative;
+  }
+  
+  .bulb:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f1c40f; /* Bulb light color */
+    border-radius: 50%;
+    bottom: -5px;
+    left: 70%;
+    transform: translateX(-50%);
+    transition: background-color 0.4s ease;
+  }
+  
+  input:checked + .bulb {
+    background-color: #333; /* Dark background for dark mode */
+  }
+  
+  input:checked + .bulb:before {
+    background-color: #f39c12; /* Warm bulb light color for dark mode */
+  }
+  
+  .icon {
+    color: #333;
+    font-size: 24px;
+    transition: all 0.4s ease;
+  }
+  
+  .sun-icon {
+    color: #f1c40f; /* Sun color */
+  }
+  
+  .moon-icon {
+    color: #ecf0f1; /* Moon color */
+  }
+  
+  input:checked + .bulb .sun-icon {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  
+  input:checked + .bulb .moon-icon {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  input:not(:checked) + .bulb .moon-icon {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  
+  input:not(:checked) + .bulb .sun-icon {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Optional: Add some spacing or adjustment */
+  .mode-switcher {
+    margin: 20px;
+    position: absolute;
+  }
+  

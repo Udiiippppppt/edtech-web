@@ -1,0 +1,80 @@
+:root {
+    --background-color: #white;
+    --text-color: #333;
+    --card-background-color: #ffffff;
+    --card-shadow-color: rgba(0, 0, 0, 0.1);
+    --icon-color: #3498db;
+  }
+  
+  body.dark-mode {
+    --background-color: #0c0c0c;
+    --text-color: #ecf0f1;
+    --card-background-color: #34495e;
+    --card-shadow-color: rgba(0, 0, 0, 0.5);
+    --icon-color: #9b59b6;
+  }
+  
+  .services-container {
+    background: var(--background-color);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .services-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .services-container h3 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .service-item {
+    background: var(--card-background-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px var(--card-shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(33% - 30px);
+    cursor: pointer;
+    min-width: 250px;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px var(--card-shadow-color);
+  }
+  
+  .service-icon {
+    font-size: 3.5rem;
+    color: var(--icon-color);
+    margin-bottom: 20px;
+  }
+  
+  .service-title {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  

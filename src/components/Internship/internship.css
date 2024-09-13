@@ -1,0 +1,69 @@
+.internship-courses-container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f7fa;
+    color: #333;
+  }
+  
+  .internship-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0066cc;
+  }
+  
+  .internship-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .internship-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .internship-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .internship-name {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #0066cc;
+  }
+  
+  .internship-duration, .internship-location {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .internship-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .purchase-button {    
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .purchase-button:hover {
+    background-color: #e65c00;
+  }
+  

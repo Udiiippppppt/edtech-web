@@ -1,0 +1,108 @@
+/* General Styles for Main Section */
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh; /* Adjust height to account for a larger header height */
+    /* background: linear-gradient(135deg, #f5f5f5, #e0e0e0); Light gradient background */
+    padding: 60px 20px; /* Increased padding for more spacing */
+    margin-top: 5px; /* Increased space between header and main section */
+    border-top-left-radius: 50px; /* Rounded top-left corner */
+    border-top-right-radius: 50px; /* Rounded top-right corner */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Limiting container width */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text-column {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.text-column h1 {
+    font-size: 37px; /* Larger font size for the title */
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.3; /* Improved line height for readability */
+    font-weight: bold; /* Bold text for emphasis */
+    text-transform: uppercase; /* Uppercase text for impact */
+    background: linear-gradient(135deg, #FF512F, #F09819); /* Gradient text color */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    -webkit-text-fill-color: transparent; /* Hide original text color */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    letter-spacing: 2px; /* Increase letter spacing */
+}
+
+.text-column p {
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+.cta-button {
+    padding: 15px 30px; /* Larger padding for a more prominent button */
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(45deg, #FF512F, #F09819); /* Gradient background */
+    border: none;
+    border-radius: 50px; /* More rounded corners */
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase; /* Uppercase text for impact */
+    font-weight: bold; /* Bold text */
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #F09819, #FF512F); /* Reverse gradient on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.cta-button:active {
+    transform: translateY(-2px); /* Slightly reduce lift on active state */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on active state */
+}
+
+
+.image-column {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+}
+
+.image-column img {
+    max-width: 100%; /* Limit image width */
+    height: 300px;
+    border-radius: 15px; /* Rounded corners for the image */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .main-section {
+        height: auto; /* Adjust height for smaller screens */
+        margin-top: 40px; /* Reduced space for smaller screens */
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .text-column {
+        padding: 10px;
+    }
+
+    .image-column {
+        margin-top: 20px;
+        order: -1;
+    }
+}
